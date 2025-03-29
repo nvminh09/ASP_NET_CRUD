@@ -1,0 +1,38 @@
+﻿@model List<Customer>
+
+<partial name="_NotificationsPartial">
+
+<div class="row">
+    <div class="col">
+        <h1>Customer List</h1>
+    </div>
+    <div class="col">
+        <a asp-action="Create" class="btn btn-primary">Create a new customer</a>    
+    </div>
+</div>
+
+<table class="table table-bodered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model.OrderBy(x => x.Id))
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.FirstName</td>
+                <td>@c.LastName</td>
+                <td>@c.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@c.Id" class="btn btn-dark me-1">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@c.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
