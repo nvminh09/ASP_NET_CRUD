@@ -4,6 +4,7 @@ using CRUD.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUD.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250330102739_AddNewColumnToYourTable")]
+    partial class AddNewColumnToYourTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +33,8 @@ namespace CRUD.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("DateBirth")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("DateBirth")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -46,7 +49,6 @@ namespace CRUD.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -57,29 +59,26 @@ namespace CRUD.Migrations
                         new
                         {
                             Id = 1,
-                            DateBirth = new DateOnly(1990, 1, 1),
+                            DateBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "john@gmail.com",
                             FirstName = "John",
-                            LastName = "Jones",
-                            Phone = "0123456789"
+                            LastName = "Jones"
                         },
                         new
                         {
                             Id = 2,
-                            DateBirth = new DateOnly(1990, 1, 1),
+                            DateBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "mary@gmail.com",
                             FirstName = "Mary",
-                            LastName = "Jones",
-                            Phone = "0123456789"
+                            LastName = "Jones"
                         },
                         new
                         {
                             Id = 3,
-                            DateBirth = new DateOnly(1990, 1, 1),
+                            DateBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "jack@gmail.com",
                             FirstName = "Jack",
-                            LastName = "Smith",
-                            Phone = "0123456789"
+                            LastName = "Smith"
                         });
                 });
 #pragma warning restore 612, 618
