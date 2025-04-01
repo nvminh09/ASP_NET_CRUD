@@ -17,6 +17,8 @@
             <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
+            <th>Date of birth</th>
+            <th>Phone</th>
             <th>Email</th>
         </tr>
     </thead>
@@ -27,6 +29,8 @@
                 <td>@c.Id</td>
                 <td>@c.FirstName</td>
                 <td>@c.LastName</td>
+                <td>@c.DateBirth</td>
+                <td>@c.Phone</td>
                 <td>@c.Email</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@c.Id" class="btn btn-dark me-1">Edit</a>
