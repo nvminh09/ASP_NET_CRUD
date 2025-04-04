@@ -42,7 +42,14 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            <div class="row">
+                <div class="col">
+                    <partial name = "_NotificationsPartial"/>
+                    @RenderBody()
+                </div>
+
+            </div>
+            
         </main>
     </div>
 
