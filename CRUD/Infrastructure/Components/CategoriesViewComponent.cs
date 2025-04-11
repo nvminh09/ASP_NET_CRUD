@@ -10,12 +10,6 @@ namespace CRUD.Infrastructure.Components
         {
             _context = context;
         }
-        public async Task<IViewComponentResult> InvokeAsync()
-        {
-            var categories = await _context.Categories.ToListAsync();
-            return View(categories);
-        }
-    }
-    {
+        public async Task<IViewComponentResult> InvokeAsync() => View(await _context.Categories.ToListAsync());
     }
 }
