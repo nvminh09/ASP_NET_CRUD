@@ -43,8 +43,9 @@ namespace CRUD.Controllers
         }
         public async Task<IActionResult> Decrease(long id)
         {
-            List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-            CartItem cartItem = cart.FirstOrDefault(x => x.ProductId == id);
+            List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart");
+            CartItem cartItem = cart.Where(c => c.ProductId == id).FirstOrDefault();
+            //CartItem cartItem = cart.FirstOrDefault(x => x.ProductId == id);
             if (cartItem.Quantity > 1)
             {
                 cartItem.Quantity -= 1;
@@ -62,21 +63,29 @@ namespace CRUD.Controllers
             {
                 HttpContext.Session.SetJson("Cart", cart);
             }
-            TempData["success"] = "Product decreased to cart successfully!";
-            return Redirect(Request.Headers["Referer"].ToString());
+            TempData["success"] = "Product has been decreased successfully!";
+            //return Redirect(Request.Headers["Referer"].ToString());
+            return RedirectToAction("Index");
         }
         public async Task<IActionResult> Remove(long id) 
         {
-            Product product = await _context.Products.FindAsync(id);
-            List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-            CartItem cartItem = cart.FirstOrDefault(x => x.ProductId == id);
-            if (cartItem != null)
+            List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart");
+            cart.RemoveAll(p => p.ProductId == id);
+            if (cart.Count == 0)
             {
-                cart.Remove(cartItem);
+                HttpContext.Session.Remove("Cart");
             }
-            HttpContext.Session.SetJson("Cart", cart);
-            TempData["success"] = "Product removed from cart successfully!";
-            return Redirect(Request.Headers["Referer"].ToString());
+            else
+            {
+                HttpContext.Session.SetJson("Cart", cart);
+            }            
+            TempData["success"] = "Product has been removed successfully!";
+            return RedirectToAction("Index");
+        }
+        public IActionResult Clear()
+        {
+            HttpContext.Session.Remove("Cart");
+            return RedirectToAction("Index");
         }
     }
 }
