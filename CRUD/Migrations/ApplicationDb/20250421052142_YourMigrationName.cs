@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace CRUD.Migrations
+namespace CRUD.Migrations.ApplicationDb
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class YourMigrationName : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

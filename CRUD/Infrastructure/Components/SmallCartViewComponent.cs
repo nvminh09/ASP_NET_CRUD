@@ -20,7 +20,7 @@ namespace CRUD.Infrastructure.Components
             {
                 smallCartVM = new()
                 {
-                    NumberOfItem = cart.Sum(x => x.Quantity),
+                    NumberOfItems = cart.Sum(x => x.Quantity),
                     TotalAmount = cart.Sum(x => x.Quantity * x.Price)
                 };
             }
