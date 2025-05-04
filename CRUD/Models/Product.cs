@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using CRUD.Infrastructure;
+using CRUD.Infrastructure.Validation;
 
 namespace CRUD.Models
 {
@@ -21,7 +22,7 @@ namespace CRUD.Models
         public Category? Category { get; set; }
         public string Image { get; set; } = "noimage.png";
         [NotMapped]
-        [FileExtensions]
+        [FileExtension]
         public IFormFile? ImageUpload { get; set; }
     }
 }
