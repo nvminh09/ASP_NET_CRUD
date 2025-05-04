@@ -12,7 +12,7 @@ namespace CRUD.Infrastructure.Validation
                 string[] extensions = { "jpg", "png" };
                 bool result = extensions.Any(x => extension.EndsWith(x));
 
-                if (!result) 
+                if (!result)
                 {
                     return new ValidationResult("Allowed extensions are jpg and png.");
                 }

@@ -82,22 +82,24 @@ namespace CRUD.Areas.Controllers
 
             return View(product);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, Product product)
+        public async Task<IActionResult> Edit(int id, Product product)
         {
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
 
             if (ModelState.IsValid)
             {
                 product.Slug = product.Name.ToLower().Replace(" ", "-");
-                var slug = await _context.Products.FirstOrDefaultAsync(p => p.Slug == product.Slug);
 
+                var slug = await _context.Products.FirstOrDefaultAsync(p => p.Slug == product.Slug);
                 if (slug != null)
                 {
-                    ModelState.AddModelError("", "This product already exists.");
+                    ModelState.AddModelError("", "The product already exists.");
                     return View(product);
                 }
+
                 if (product.ImageUpload != null)
                 {
                     string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
@@ -115,8 +117,9 @@ namespace CRUD.Areas.Controllers
                 _context.Update(product);
                 await _context.SaveChangesAsync();
 
-                TempData["success"] = "Product has been edited successfully.";
+                TempData["Success"] = "The product has been edited!";
             }
+
             return View(product);
         }
         public async Task<IActionResult> Delete(long id)
@@ -136,6 +139,5 @@ namespace CRUD.Areas.Controllers
             TempData["success"] = "Product has been deleted successfully.";
             return RedirectToAction("Index");
         }
-
     }
 }

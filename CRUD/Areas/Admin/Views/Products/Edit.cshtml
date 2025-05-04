@@ -18,7 +18,7 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            
+
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <textarea asp-for="Description" class="form-control"></textarea>
@@ -33,8 +33,8 @@
 
             <div class="form-group">
                 <label>Categories</label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.Categories">
-                    <option value="0">Select a category</option>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+                    <option value="0">Choose a category</option>
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
@@ -65,12 +65,12 @@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
-}
+    }
 
 <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 <script>
     $("#ImageUpload").change(function() {
-        readURL(this);
+            readURL(this);
     });
 
     CKEDITOR.replace( 'Description' );
