@@ -51,7 +51,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection(); // <-- Temporarily comment this out
 
 app.MapControllerRoute(
     name: "Areas",

@@ -24,7 +24,7 @@ namespace CRUD.Controllers
                 IdentityResult result = await _userManager.CreateAsync(newUser, user.Password);
                 if (result.Succeeded)
                 {
-                    return Redirect("admin/products");
+                    return RedirectToAction("Index", "Products", new { area = "Admin" });
                 }
                 foreach (var error in result.Errors)
                 {
@@ -35,29 +35,24 @@ namespace CRUD.Controllers
         }
         public IActionResult Login(string returnUrl) => View(new LoginViewModel { ReturnUrl = returnUrl });
         [HttpPost]
+
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
             if (ModelState.IsValid)
             {
                 Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.UserName, loginVM.Password, false, false);
-
                 if (result.Succeeded)
                 {
                     return Redirect(loginVM.ReturnUrl ?? "/");
                 }
-
                 ModelState.AddModelError("", "Invalid username or password");
             }
-
             return View(loginVM);
         }
-
         public async Task<RedirectResult> Logout(string returnUrl = "/")
         {
             await _signInManager.SignOutAsync();
-
             return Redirect(returnUrl);
         }
-
     }
 }
