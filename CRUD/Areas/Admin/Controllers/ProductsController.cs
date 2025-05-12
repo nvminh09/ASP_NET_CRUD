@@ -8,6 +8,7 @@ using CRUD.Models;
 namespace CRUD.Areas.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ProductsController : Controller
     {        
         private readonly DataContext _context;
