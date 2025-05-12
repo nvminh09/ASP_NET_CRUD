@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\CRUD.csproj": {}
+    "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\CRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\CRUD.csproj": {
+    "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\CRUD.csproj",
+        "projectPath": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\CRUD.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\obj\\",
+        "outputPath": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"

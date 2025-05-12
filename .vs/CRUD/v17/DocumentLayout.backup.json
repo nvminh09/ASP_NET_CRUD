@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguye\\source\\repos\\CRUD\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\source\\repos\\crud\\crud\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\source\\repos\\crud\\crud\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\source\\repos\\crud\\crud\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\source\\repos\\crud\\crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|c:\\users\\nguye\\downloads\\project\\asp_net_crud\\crud\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3D30484-DD29-4264-9AB6-0E846D4FA718}|CRUD\\CRUD.csproj|solutionrelative:crud\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +34,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "CRUD\\appsettings.json",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\appsettings.json",
+              "RelativeToolTip": "CRUD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T09:57:57.396Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Views\\Customer\\Index.cshtml",
-              "RelativeDocumentMoniker": "CRUD\\Views\\Customer\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Views\\Customer\\Index.cshtml",
-              "RelativeToolTip": "CRUD\\Views\\Customer\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvx8AAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T08:54:50.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Views\\Customer\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CRUD\\Views\\Customer\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Views\\Customer\\Edit.cshtml",
-              "RelativeToolTip": "CRUD\\Views\\Customer\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:14:20.633Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "CRUD\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Program.cs",
+              "RelativeToolTip": "CRUD\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T09:56:46.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "CRUD\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "CRUD\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEkAAAAsAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CRUD\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CRUD\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:28:25.265Z",
+              "WhenOpened": "2025-05-11T05:22:37.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Program.cs",
-              "RelativeDocumentMoniker": "CRUD\\Program.cs",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\CRUD\\CRUD\\Program.cs",
-              "RelativeToolTip": "CRUD\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CRUD\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CRUD\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:18:39.115Z"
+              "WhenOpened": "2025-05-09T16:14:33.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CRUD\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CRUD\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvzcAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T15:56:23.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CRUD\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\Downloads\\Project\\ASP_NET_CRUD\\CRUD\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CRUD\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T15:55:52.657Z"
             }
           ]
         }
