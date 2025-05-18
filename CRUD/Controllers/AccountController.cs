@@ -35,7 +35,6 @@ namespace CRUD.Controllers
         }
         public IActionResult Login(string returnUrl) => View(new LoginViewModel { ReturnUrl = returnUrl });
         [HttpPost]
-
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
             if (ModelState.IsValid)
@@ -43,7 +42,7 @@ namespace CRUD.Controllers
                 Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.UserName, loginVM.Password, false, false);
                 if (result.Succeeded)
                 {
-                    return Redirect(loginVM.ReturnUrl ?? "/");
+                    return Redirect(loginVM.ReturnUrl ?? "/");                    
                 }
                 ModelState.AddModelError("", "Invalid username or password");
             }
